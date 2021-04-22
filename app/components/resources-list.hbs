@@ -1,0 +1,8 @@
+<div class="resources-list-container">
+  {{#each @elements as |element|}}
+    <ListElement
+      @id={{element}}
+      @onClick={{(fn @onFaceClicked element)}}
+    />
+  {{/each}}
+</div>

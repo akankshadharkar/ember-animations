@@ -1,1 +1,11 @@
-{{yield}}
+<div class="resource-container">
+  <ResourcesList
+    @elements = {{@elements.available}}
+    @onFaceClicked={{@toggleElementsBetweenLists}}
+  />
+  
+  <ResourcesList
+    @elements={{@elements.allocated}}
+    @onFaceClicked={{@toggleElementsBetweenLists}}
+  />
+</div>

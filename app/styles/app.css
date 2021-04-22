@@ -1,7 +1,32 @@
+.list-container {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px red dashed;
+    text-align: center;
+}
+
+.list-container p {
+    font-size: 2em;
+}
+
 .list-container img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px red solid;
+    border: 2px red dashed;
     object-fit: contain;
+}
+
+.resource-container, .resources-list-container {
+    display: flex;
+}
+
+.resources-list-container {
+    width: 50%;
+    border: 2px plum solid;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: 0px 10px;
 }
