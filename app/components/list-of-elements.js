@@ -4,16 +4,16 @@ import move from 'ember-animated/motions/move';
 import scale from 'ember-animated/motions/scale';
 import { parallel } from 'ember-animated';
 export default class ListOfElementsComponent extends Component {
-  * transition({ sentSprites, receivedSprites }) {
+  * transition({ sentSprites, receivedSprites, keptSprites }) {
     
-    console.log("SENTTTT", sentSprites, "RECEIVED", receivedSprites)
+    console.log("SENTTTT", sentSprites, "RECEIVED", receivedSprites, "KEPT", keptSprites);
 
     sentSprites.forEach(sprite => {
       parallel(move(sprite), scale(sprite));
     });
 
-    receivedSprites.forEach(sprite => {
-      sprite.moveToFinalPosition();
+    keptSprites.forEach(sprite => {
+      move(sprite);
     });
 
     // Removed sprites should exit to the right side of the window. We use

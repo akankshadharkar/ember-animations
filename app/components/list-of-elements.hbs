@@ -1,5 +1,5 @@
 <AnimatedContainer>
-  {{#animated-each @elements use=transition duration=500 as |element|}}
-    <SingleElement @id={{element.id}} @obj={{element}} @onClick={{(fn @onFaceClicked element)}} />
+  {{#animated-each @elements use=transition duration=1000 as |element|}}
+    <SingleElement @id={{element}} @obj={{element}} @onClick={{(fn @onFaceClicked element)}} />
   {{/animated-each}}
 </AnimatedContainer>
