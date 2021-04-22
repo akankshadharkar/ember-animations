@@ -4,9 +4,7 @@ import { action } from '@ember/object';
 export default class IndexController extends Controller {
 
   @action
-  toggleElementsBetweenLists(tomsterId) {
-    console.log(tomsterId)
-    
+  toggleElementsBetweenLists(tomsterId) { 
     let sourceArray, targetArray;
 
     if(this.model.available.includes(tomsterId)) {

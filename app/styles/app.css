@@ -1,4 +1,4 @@
-.list-container {
+.list-item {
     margin: 10px;
     width: 100px;
     height: 100px;
@@ -19,11 +19,11 @@
     object-fit: contain;
 }
 
-.resource-container, .resources-list-container {
+.container, .list-container {
     display: flex;
 }
 
-.resources-list-container {
+.list-container {
     width: 50%;
     border: 2px plum solid;
     border-radius: 20px;
