@@ -4,10 +4,10 @@ import { action } from '@ember/object';
 export default class IndexController extends Controller {
 
   @action
-  toggleElementsBetweenLists(tomsterId) { 
+  toggleElementsBetweenLists(tomsterObj) { 
     let sourceArray, targetArray;
 
-    if(this.model.available.includes(tomsterId)) {
+    if(this.model.available.includes(tomsterObj)) {
       sourceArray = this.model.available;
       targetArray = this.model.allocated;
     }
@@ -16,10 +16,10 @@ export default class IndexController extends Controller {
       targetArray = this.model.available;
     }
     
-    if(sourceArray.includes(tomsterId)) {
-      const tomsterIndex = sourceArray.indexOf(tomsterId);
+    if(sourceArray.includes(tomsterObj)) {
+      const tomsterIndex = sourceArray.indexOf(tomsterObj);
       sourceArray.removeAt(tomsterIndex);
-      targetArray.pushObject(tomsterId);
+      targetArray.pushObject(tomsterObj);
     }
   }
 }

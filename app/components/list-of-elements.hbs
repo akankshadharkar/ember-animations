@@ -1,8 +1,5 @@
-<div class="list-container">
-  {{#each @elements as |element|}}
-    <SingleElement
-      @id={{element}}
-      @onClick={{(fn @onFaceClicked element)}}
-    />
-  {{/each}}
-</div>
+<AnimatedContainer>
+  {{#animated-each @elements use=transition duration=500 as |element|}}
+    <SingleElement @id={{element.id}} @obj={{element}} @onClick={{(fn @onFaceClicked element)}} />
+  {{/animated-each}}
+</AnimatedContainer>

@@ -19,14 +19,27 @@
     object-fit: contain;
 }
 
-.container, .list-container {
+.container {
     display: flex;
+    justify-content: center;
+    margin-top: 15%;
 }
 
 .list-container {
-    width: 50%;
+    width: 40%;
+    /* height: fit-content; */
     border: 2px plum solid;
     border-radius: 20px;
-    flex-wrap: wrap;
     margin: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.animated-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px plum solid;
+    border-radius: 20px;
+    margin: 0px 10px;
+    width: 40%;
 }
