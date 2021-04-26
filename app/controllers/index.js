@@ -7,15 +7,15 @@ export default class IndexController extends Controller {
   toggleElementsBetweenLists(tomsterObj) { 
     let sourceArray, targetArray;
 
-    if(this.model.available.includes(tomsterObj)) {
-      sourceArray = this.model.available;
-      targetArray = this.model.allocated;
+    if(this.model.leftList.includes(tomsterObj)) {
+      sourceArray = this.model.leftList;
+      targetArray = this.model.rightList;
     }
     else {
-      sourceArray = this.model.allocated;
-      targetArray = this.model.available;
+      sourceArray = this.model.rightList;
+      targetArray = this.model.leftList;
     }
-    
+
     if(sourceArray.includes(tomsterObj)) {
       const tomsterIndex = sourceArray.indexOf(tomsterObj);
       sourceArray.removeAt(tomsterIndex);

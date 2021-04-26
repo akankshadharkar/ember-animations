@@ -5,8 +5,6 @@ import scale from 'ember-animated/motions/scale';
 import { parallel } from 'ember-animated';
 export default class ListOfElementsComponent extends Component {
   * transition({ sentSprites, receivedSprites, keptSprites }) {
-    
-    console.log("SENTTTT", sentSprites, "RECEIVED", receivedSprites, "KEPT", keptSprites);
 
     sentSprites.forEach(sprite => {
       parallel(move(sprite), scale(sprite));
