@@ -1,7 +1,9 @@
 # ember-animations
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo is for learning and experimenting with animations in EmberJS
+You can check out different branches for different animations like 
+* click to move items between lists
+* drag and drop items between lists
 
 ## Prerequisites
 

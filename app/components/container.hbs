@@ -1,11 +1,11 @@
 <div class="container">
   <ListOfElements
-    @elements = {{@elements.available}}
+    @elements = {{@elements.leftList}}
     @onFaceClicked={{@toggleElementsBetweenLists}}
   />
   
   <ListOfElements
-    @elements={{@elements.allocated}}
+    @elements={{@elements.rightList}}
     @onFaceClicked={{@toggleElementsBetweenLists}}
   />
 </div>

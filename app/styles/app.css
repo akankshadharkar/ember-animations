@@ -5,9 +5,10 @@
     border-radius: 50%;
     border: 2px red dashed;
     text-align: center;
+    cursor: pointer;
 }
 
-.list-container p {
+.list-item p {
     font-size: 2em;
 }
 
@@ -25,22 +26,14 @@
     margin-top: 15%;
 }
 
-.list-container {
-    width: 40%;
-    /* height: fit-content; */
-    border: 2px plum solid;
-    border-radius: 20px;
-    margin: 0px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .animated-container {
     display: flex;
     flex-wrap: wrap;
     border: 2px plum solid;
     align-content: flex-start;
     border-radius: 20px;
-    margin: 0px 10px;
-    width: 40%;
+    margin: 0px 40px;
+    width: 30%;
+    align-content: flex-start;
+    justify-content: center;
 }
