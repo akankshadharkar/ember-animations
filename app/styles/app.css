@@ -39,6 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     border: 2px plum solid;
+    align-content: flex-start;
     border-radius: 20px;
     margin: 0px 10px;
     width: 40%;
